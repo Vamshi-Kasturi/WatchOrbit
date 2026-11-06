@@ -1,21 +1,29 @@
-import { useState } from 'react'
-import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import MovieDetails from './pages/MovieDetails/MovieDetails'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { FavoritesProvider } from "./context/FavoritesContext";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./pages/Home/Home";
+import MovieDetails from "./pages/MovieDetails/MovieDetails";
+import Favorites from "./pages/Favorites/Favorites";
+import "./App.css";
 
 function App() {
-
   return (
-    <>
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<Home />} /> 
-        <Route exact path='/movie/:title' element={<MovieDetails />} /> 
-      </Routes>
-    </Router>  
-    </>
-  )
+    <FavoritesProvider>
+      <Router>
+        <div className="app-layout">
+          <Navbar />
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/movie/:id" element={<MovieDetails />} />
+              <Route path="/favorites" element={<Favorites />} />
+            </Routes>
+          </main>
+        </div>
+      </Router>
+    </FavoritesProvider>
+  );
 }
 
-export default App
+export default App;

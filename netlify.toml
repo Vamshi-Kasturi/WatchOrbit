@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/api/justwatch"
+  to = "https://apis.justwatch.com/graphql"
+  status = 200
+  force = true
+  headers = { User-Agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+

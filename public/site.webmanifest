@@ -1,0 +1,22 @@
+{
+  "name": "CineScope - Movie & OTT Streaming Discovery",
+  "short_name": "CineScope",
+  "description": "Discover movies, TV shows, and live OTT streaming platforms.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#0b0f19",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+

@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/justwatch",
+      "destination": "/api/justwatch.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
