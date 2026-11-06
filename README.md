@@ -1,4 +1,4 @@
-# 🎬 CineScope — Movie & Live OTT Streaming Guide
+# 🎬 WatchOrbit — Movie & Live OTT Streaming Guide
 
 A modern cinematic web application built with **React 19**, **Vite**, and **OMDb API**, featuring verified live **OTT Streaming availability** (JioHotstar, Netflix, Amazon Prime Video, Apple TV), dynamic debounced search, genre/year filters, and an interactive **Watchlist** tracker with "Plan to Watch" and "Watched" organization.
 

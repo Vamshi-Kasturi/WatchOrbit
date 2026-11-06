@@ -13,7 +13,7 @@ const POPULAR_SUGGESTIONS = [
   "Stranger Things",
 ];
 
-const RECENT_SEARCHES_KEY = "cinescope_recent_searches";
+const RECENT_SEARCHES_KEY = "watchorbit_recent_searches";
 
 export default function Home() {
   const [searchInput, setSearchInput] = useState("");
@@ -29,7 +29,9 @@ export default function Home() {
 
   const [recentSearches, setRecentSearches] = useState(() => {
     try {
-      const stored = localStorage.getItem(RECENT_SEARCHES_KEY);
+      const stored =
+        localStorage.getItem(RECENT_SEARCHES_KEY) ||
+        localStorage.getItem("cinescope_recent_searches");
       return stored ? JSON.parse(stored) : [];
     } catch {
       return [];

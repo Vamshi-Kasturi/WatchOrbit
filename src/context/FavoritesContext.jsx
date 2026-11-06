@@ -2,12 +2,14 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 const FavoritesContext = createContext();
 
-const FAVORITES_STORAGE_KEY = "cinescope_favorites_v1";
+const FAVORITES_STORAGE_KEY = "watchorbit_favorites_v1";
 
 export function FavoritesProvider({ children }) {
   const [favorites, setFavorites] = useState(() => {
     try {
-      const stored = localStorage.getItem(FAVORITES_STORAGE_KEY);
+      const stored =
+        localStorage.getItem(FAVORITES_STORAGE_KEY) ||
+        localStorage.getItem("cinescope_favorites_v1");
       return stored ? JSON.parse(stored) : [];
     } catch (e) {
       console.error("Failed to load favorites from localStorage", e);

@@ -1,6 +1,6 @@
 {
-  "name": "CineScope - Movie & OTT Streaming Discovery",
-  "short_name": "CineScope",
+  "name": "WatchOrbit - Movie & OTT Streaming Discovery",
+  "short_name": "WatchOrbit",
   "description": "Discover movies, TV shows, and live OTT streaming platforms.",
   "start_url": "/",
   "display": "standalone",
@@ -19,4 +19,3 @@
     }
   ]
 }
-

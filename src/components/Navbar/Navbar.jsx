@@ -13,7 +13,7 @@ export default function Navbar() {
         <Link to="/" className="navbar-logo">
           <span className="logo-icon">🎬</span>
           <span className="logo-text">
-            Cine<span className="gradient-text">Scope</span>
+            Watch<span className="gradient-text">Orbit</span>
           </span>
         </Link>
 
