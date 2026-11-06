@@ -28,36 +28,4 @@ A modern cinematic web application built with **React 19**, **Vite**, and **OMDb
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/Vamshi-Kasturi/CineScope.git
-cd CineScope
-```
-
-### 2. Install dependencies
-```bash
-npm install
-```
-
-### 3. Configure environment variables
-Create a `.env` file in the root directory:
-```env
-VITE_OMDB_API_KEY=your_omdb_api_key_here
-```
-
-### 4. Run the development server
-```bash
-npm run dev
-```
-
-### 5. Build for production
-```bash
-npm run build
-```
-
----
-
-## 📄 License
 MIT License. Built for movie enthusiasts.
