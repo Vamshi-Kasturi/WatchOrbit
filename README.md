@@ -28,4 +28,4 @@ A modern cinematic web application built with **React 19**, **Vite**, and **OMDb
 
 ---
 
-MIT License. Built for movie enthusiasts.
+Built for movie enthusiasts.
